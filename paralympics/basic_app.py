@@ -10,14 +10,9 @@ def hello(name):
 
 @app.route('/')
 def index():
-    return '''
-    <html>
-    <head><head>
-    <body>
-        <h2> Paralympics App <h2>
-    </body>
-    </html>
-    '''
+    return render_template('index.html')
+
+    
 
 if __name__ == '__main__':
     app.run(debug=True)
